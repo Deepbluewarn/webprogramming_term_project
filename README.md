@@ -1,6 +1,6 @@
 ## Web Programming Term Project
 
-## Movie Sight (영화 평점 예측 시스템)
+## Movie Insight (영화 평점 예측 시스템)
 
 ## 개요
 이 프로젝트는 머신러닝 알고리즘을 활용하여 영화의 평점 예측하고 상세 정보를 제공하는 웹 기반 애플리케이션입니다. TMDB와 OMDB API를 통해 영화 데이터를 수집하고, 다중 회귀 분석을 사용하여 예측을 수행합니다. 또한 HTML, CSS, JavaScript로 구성된 사용자 친화적인 인터페이스를 제공합니다.
