@@ -6,6 +6,7 @@ import { getMovieInfoByIMDbId } from '../services/omdb.js';
 import { normalizeRatings } from '../utils/omdb.js';
 import { delay } from '../utils/index.js';
 
+// OMDB API로 평점 데이터를 보충하는 함수
 async function enrichMovieData() {
     dbConn();
     const trains = await MovieDetail.find({}); // 모델 훈련용 데이터셋

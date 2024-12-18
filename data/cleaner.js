@@ -1,6 +1,8 @@
 import MovieDetail from '../model/MovieDetail.js'
 import dbConn from '../db/connection.js'
 
+// 데이터셋을 직접 구성하기 위해 작성한 함수.
+// 더 이상 사용하지 않는 함수입니다.
 async function deleteNoBudget() {
     await dbConn();
     // budget 값이 0인 문서의 개수 확인

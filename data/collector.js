@@ -5,6 +5,9 @@ import dbConn from '../db/connection.js'
 
 dbConn()
 
+// 데이터를 직접 수집하는 함수.
+// 더 이상 사용하지 않는 함수입니다.
+
 async function discoverMovies() {
     console.time('discoverMovies')
 
