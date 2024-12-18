@@ -58,7 +58,7 @@ pip install -r requirements.txt
 ### 4. 머신러닝 모델 학습
 서버를 실행하기 전에 머신러닝 모델을 학습시키고 저장해야 합니다:
 ```bash
-python train_model.py
+python model/index.py
 ```
 이 명령어는 지정된 디렉토리에 학습된 모델 파일(`model.pkl`)을 생성합니다.
 `predict_model/analysis_plots`에서 분석 결과를 확인할 수 있습니다.
