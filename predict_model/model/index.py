@@ -14,7 +14,7 @@ import pickle
 load_dotenv()
 
 client = pymongo.MongoClient(
-    f'mongodb://user_1:{os.environ.get("MONGODB_PASSWORD")}@mongo.bluewarn.dev:27018', 
+    os.environ.get("MONGODB_CONNECTION_STRING"),
     authSource='webprogramming', tls=True
 )
 db = client['webprogramming']
