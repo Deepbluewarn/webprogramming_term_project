@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```bash
 python model/index.py
 ```
-이 명령어는 지정된 디렉토리에 학습된 모델 파일(`model.pkl`)을 생성합니다.
+이 명령어는 지정된 디렉토리에 학습된 모델 파일(`lin_model.pkl`)을 생성합니다.
 `predict_model/analysis_plots`에서 분석 결과를 확인할 수 있습니다.
 
 #### 5. Node.js 의존성 설치
