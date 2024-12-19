@@ -13,6 +13,7 @@ export const renderDetail = async (req, res) => {
 
     // TMDB API로 영화 상세 데이터 요청하는 서비스 함수
     const detail = await getMovieDetail(movie_id);
+    detail.vote_average = detail.vote_average / 2;
 
     let predicted_rating = 0;
 
@@ -21,7 +22,7 @@ export const renderDetail = async (req, res) => {
         if (isNaN(predicted_rating)) {
             predicted_rating = 0;
         } else {
-            predicted_rating = predicted_rating.toFixed(2);
+            predicted_rating = (predicted_rating / 2).toFixed(2);
         }
     } catch(err) {
         console.error('평점 예측 중 오류 발생: ', err)

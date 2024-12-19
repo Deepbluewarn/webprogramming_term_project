@@ -29,9 +29,15 @@
                         <!-- 여기에 제작비, 수익, 평점, 예측된 평점을 표시한다. -->
                         <p class="budget" id="budget">제작비: {{ detail.budget }}</p>
                         <p class="budget" id="revenue">수익: {{ detail.revenue }}</p>
-                        <p>평점: {{ (detail.vote_average * 10) | round / 10 }}</p>
-                        <i data-star="{{ detail.vote_average }}"></i>
-                        <p>예측된 평점: {{ (predicted_rating * 10) | round / 10 }}</p>
+                        <p>평점: 
+                            <i data-star="{{ detail.vote_average }}"></i>
+                            ({{ (detail.vote_average * 10) | round / 10 }} / 5)
+                        </p>
+                        
+                        <p>예측 평점: 
+                            <i class="predict_star" data-star="{{ predicted_rating }}"></i>
+                            ({{ (predicted_rating * 10) | round / 10 }} / 5)
+                        </p>
 
                     </div>
 
