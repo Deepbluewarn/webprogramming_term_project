@@ -5,7 +5,7 @@ const connect = async () => {
         // mongoose.set('debug', true);
     }
 
-    await mongoose.connect('mongodb://user_1:3O06NfRVjqrf9W@mongo.bluewarn.dev:27018/webprogramming', {
+    await mongoose.connect(process.env.MONGODB_URI, {
         dbName: 'webprogramming',
         useNewUrlParser: true,
         tls: true,
